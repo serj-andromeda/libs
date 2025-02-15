@@ -1,0 +1,196 @@
+Help on package ps_funcs:
+
+NAME
+    ps_funcs
+
+DESCRIPTION
+    # PS_funcs (ps_funcs)
+    This module provides various utility functions for [Python](https://python.org) programs
+
+PACKAGE CONTENTS
+    py (package)
+
+CLASSES
+    builtins.Exception(builtins.BaseException)
+        PSException
+
+    class PSException(builtins.Exception)
+     |  PSException(*args_passed_lst: list, **kwargs_passed_dict: dict)
+     |
+     |  Method resolution order:
+     |      PSException
+     |      builtins.Exception
+     |      builtins.BaseException
+     |      builtins.object
+     |
+     |  Methods defined here:
+     |
+     |  __init__(self, /, *args_passed_lst: list, **kwargs_passed_dict: dict)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  __weakref__
+     |      list of weak references to the object
+     |
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from builtins.Exception:
+     |
+     |  __new__(*args, **kwargs) class method of builtins.Exception
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.BaseException:
+     |
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  __setstate__(...)
+     |
+     |  __str__(self, /)
+     |      Return str(self).
+     |
+     |  add_note(...)
+     |      Exception.add_note(note) --
+     |      add a note to the exception
+     |
+     |  with_traceback(...)
+     |      Exception.with_traceback(tb) --
+     |      set self.__traceback__ to tb and return self.
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from builtins.BaseException:
+     |
+     |  __cause__
+     |      exception cause
+     |
+     |  __context__
+     |      exception context
+     |
+     |  __dict__
+     |
+     |  __suppress_context__
+     |
+     |  __traceback__
+     |
+     |  args
+
+FUNCTIONS
+    arg_value(arg_name_variants_str_lst: list, default: str | None = None) -> str | None
+        Function to get certain argument value
+
+    backtick(cmd)
+        Execute command in shell and return result like backtick in shell and PHP
+        :param cmd: command to execute
+        :type cmd: str
+        :returns: what command cmd sends to stdout (basically just output of command)
+        :rtype: str
+
+    correctForm_str(term: str, nmb: int, lang: str = 'en', includeNmb=True, case: str = 'и') -> str
+
+    file_exists(filename, dirIsOk=False) -> bool
+        Check if file exists
+
+    file_get_contents(filename, binary=False, forceZip=False)
+        Function mimics PHP file_get_contents minimal behavior - reads file specified by *filename* arg and return its content.
+        However it is not fully compatible substitution cause it doesn't supports any psrameters beside *filename*
+
+    file_put_contents(filename, data, overwrite=False)
+        Function mimics PHP file_put_contents minimal behavior - reads file specified by *filename* arg and return its content.
+        However it is not fully compatible substitution cause it doesn't supports any psrameters beside *filename* and *data*
+
+    gen_nums_str(start_int: int = 1, len_int: int = 10) -> str
+        Generate string with digits ending numbers from start_int (optional. default is 1) to len_int (optional, inclusive, default is 10)
+
+    getChildByTagName(parent: xml.dom.minidom.Node, childTag: str) -> xml.dom.minidom.Node | None
+
+    getChildByTagNameIter_node(parent: xml.dom.minidom.Node, childTag: str) -> xml.dom.minidom.Node | None
+
+    getChildrenByTagName_node_lst(parent: xml.dom.minidom.Node, childTag: str) -> list
+
+    getChildrenFromAllDescByTagName_node_lst(parent: xml.dom.minidom.Node, childTag: str) -> list
+        Get children from all descendants of Node parent (direct and indirect) using native DOM method
+
+    getFullPersonName_str(node: xml.dom.minidom.Node) -> str
+
+    getNodeAttrs_dict(node: xml.dom.minidom.Node) -> dict
+
+    getNodeAttrs_str(node: xml.dom.minidom.Node) -> str
+
+    getNodeText_str(node: xml.dom.minidom.Node) -> str
+
+    get_bool_val_str(val_bool: bool, type_str: str = 'YN') -> str
+        Return 1st symbol in type_str if val is True, second otherwise.
+
+        Recomended most popular values for type_str:
+        YN (default, Y/N depends on val)
+        10 (bool vals)
+        TF (shorthand for True/False)
+        +- (+ for True, - otherwise)
+        ✔️✖️ - this and following one variants look fancy but supported only on unicode-friendly terminals (most of modern ones though)
+        ✅❎ - see above note
+        ✅❌ - see above note
+
+    get_path_sep_str() -> str
+
+    getnl_str() -> str
+
+    key_in_dict_and_true(d_dct: dict = {}, key_str: str = '') -> bool
+        Return true only if key pesents in dict and True
+
+    keybyval(d, val)
+        Return key or keys in dictionary having passed value.
+        In ideal case (only one key has given value returns this key
+        If no keys have given value returns None
+        If more than one key have given value returns list of such keys
+
+    list_replace(lst, repl, ind) -> list
+        Replace values in lst with repl values at index ind
+
+    now_dt() -> datetime.datetime
+
+    opt_exists(opt: str, prependDash: bool = True, singleDashPrepend=False) -> bool
+        Check if passed option exists in CLI call
+
+        :param opt: option name to check
+
+        :param prependDash: whether need to prepend opt with dash or not. Default True, so opt could be passed here without dash
+
+        :param singleDashPrepend: if prependDash arg isvtrue prepend only in option style with single dash, otherwise prepend long (with len not equal to one) options with double dash
+
+    press_enter()
+        Wait for user pressing Enter key
+
+    psdate_str(log_fmt_bool: bool = False, cl_fmt_bool: bool = False, fmt_str=None) -> str
+        Returns current date in format yymmdd
+        Could be overriden by pass explicit format through fmt param
+
+    pstime_str(longFmt: bool = False) -> str
+
+    system(cmd)
+        system equal to PHP system
+
+    val_for_int_in_dict_or_default(d_dct: dict = {}, key_str: str = '', default_val_int: int = -1) -> int
+        Return int value for key in dict or default value if there is no such key
+
+    xmlentities(in_str: str) -> str
+        replaces basic XML entities (see xml_entities_map_dict for list of replacements)
+
+DATA
+    ps_funcs_date_cl_fmt = '%Y/%m/%d'
+    ps_funcs_date_default_fmt = '%g%m%d'
+    ps_funcs_date_log_fmt = '%Y-%m-%d'
+    xml_entities_map_dict = {'"': '&quot;', '&': '&amp;', "'": '&apos;', '...
+    xml_entities_map_transtbl = {34: '&quot;', 38: '&amp;', 39: '&apos;', ...
+
+FILE
+    /data/data/com.termux/files/usr/lib/python3.12/site-packages/ps_funcs/__init__.py
+
+

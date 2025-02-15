@@ -1,0 +1,3 @@
+chars={
+'Horizontal Ellipsis':'…',
+}
