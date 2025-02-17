@@ -1,8 +1,8 @@
 {
     "name": "serj-by/ps_shcolar",
-    "description": "A short description of what your package does",
-    "require": {
-        "php": ">=8.2",
-        "another-vendor/package": "1.*"
+    "description": "SHCOLAR library stands for SHell COLors ARray and stands for provide your app array with ANSI escape sequences for colorize/stylize output of yor app to terminal",
+    "license": "LGPL-2.1-or-later,
+        "require": {
+        "php": ">=5.0"
     }
 }
