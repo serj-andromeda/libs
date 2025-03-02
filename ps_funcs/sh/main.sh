@@ -45,4 +45,5 @@ function get_bak_tm_dir_or_mk_it_str {
 
         echo $ps_bak_tm_dir_str
 }
+echo -e "@ps\033[93m" "bashsrc: {realpath $BASH_SOURCE}  "\033[0m"
 is_silent_boolint || echo "end of ps_funcs.sh"
