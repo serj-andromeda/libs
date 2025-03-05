@@ -13,8 +13,10 @@ from . import encodings
 
 from . import shfuncs
 from . import path
+from . import cli
 
 from . import files
+from . import ps_csv
 from . import ps_csv
 
 
