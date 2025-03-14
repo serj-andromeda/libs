@@ -1,6 +1,7 @@
 {
     "name": "serj-by/ps_shcolar",
-    "description": "SHCOLAR library stands for SHell COLors ARray and stands for provide your app array with ANSI escape sequences for colorize/stylize output of yor app to terminal",
+    "type": "library",
+    "description": "SHCOLAR library stands for SHell COLors ARrays and stands for provide your app array with ANSI escape sequences for colorize/stylize output of yor app to terminal",
     "license": "LGPL-2.1-or-later",
         "require": {
         "php": ">=5.0"
@@ -10,7 +11,7 @@
             "name": "Serj.by",
             "email": "serj-by@yandex.by",
             "homepage": "https://www.serj.by",
-            "role": "Developer, Maintainer, Writer etc, One man band :)"
+            "role": "Developer, Maintainer, Documentation writer etc, One man band :)"
         }
     ]
 }
