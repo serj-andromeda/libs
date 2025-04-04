@@ -15,9 +15,9 @@ from . import fg
 from . import bg
 
 from . import funcs
-from . import colors
+#from . import lists
 from functools import reduce
-__all__=['reset', 'fg_reset', 'bg_reset', 'fg', 'bg', 'colors', 'funcs']
+__all__=['reset', 'fg_reset', 'bg_reset', 'fg', 'bg', 'lists', 'funcs']
 
 
 reset="\033[0m";

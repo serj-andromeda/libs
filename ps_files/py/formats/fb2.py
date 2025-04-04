@@ -80,7 +80,7 @@ class fb2():
 		with open (fn_str, encoding=initial_encoding_str) as in_fp:
 			line1=in_fp.readline().strip()
 		if line1=='':
-			raise ps_funcs.PSException("Could not read 1st linebofvfile to detect encoding", fatal=True)
+			raise ps_funcs.PSException("Could not read 1st linebof file to detect encoding", fatal=True)
 		
 		
 		rx_enc_pcre_str="encoding=(['\"])(?P<enc>[^'\"]+)\\1"
@@ -88,7 +88,7 @@ class fb2():
 		if m_match is None:
 			print (f"@ps No encoding info found in '{fn_str}'. Line1 and pcre below.")
 			print ("@ps Line1:", line1)
-			print ("@ps pcre:", rx_enc_pcre_str)
+			print ("@ps pcre fot rnc:", rx_enc_pcre_str)
 		else:
 			print ("@ps enc_match_dict", m_match.groupdict())
 			gd_dict=m_match.groupdict()
@@ -180,7 +180,6 @@ class fb2():
 		self.str_includes_annotation=val
 
 	def __str__ (self)->str:
-#		print ("start fb2 str method")
 		res="Title: "+self.get_title_str()+eol+\
 		"Author: "+self.get_author_str()+eol+\
 		"Genre: "+self.get_genre_str()+eol+\

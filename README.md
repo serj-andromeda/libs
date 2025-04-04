@@ -1,4 +1,4 @@
-# `libs` dir/repo contains varuous libraries for Python/Shell/PHP (some libs have only few language versions/
+# `libs` dir/repo contains various libraries for Python/Shell/PHP (some libs have only few language versions/
 # `ps_shcolar`
 - *SHell COLor arrays*
 - lib with escape codes for colorizing/styling console output

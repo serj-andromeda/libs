@@ -83,3 +83,8 @@
 - changed default encoding from hardcoded one to `self .defaault_encoding_str`. However it is still `utf-8`
 - `filename_str` and `encoding_dtr` moved from confug to obect properties since it is obviously not config values
 
+## 20/03/25
+### [fb2.py](fb2.py)
+- fixed typo (extra `+` before dict function)
+- removed unused commented code
+- ficed typod in `detect_encoding_str` function
