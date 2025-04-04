@@ -10,8 +10,8 @@ dim="\033[2m";
 """Escape sequence for dimmed text"""
 italic="\033[3m";
 """Escape sequence for italic text"""
-yellow="\033[43m";
-"""Escape sequence for background yellow color"""
+underline="\033[4m";
+"""Escape sequence for underlined text"""
 blue="\033[44m";
 """Escape sequence for background blue color"""
 magenta="\033[45m";
