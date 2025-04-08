@@ -11,13 +11,16 @@ Color escape codes are from [Wikipedia](https://en.m.wikipedia.org/wiki/ANSI_esc
 """
 
 
+from . import lists
+from . import consts
+
+
 from . import fg
 from . import bg
 
 from . import funcs
-#from . import lists
 from functools import reduce
-__all__=['reset', 'fg_reset', 'bg_reset', 'fg', 'bg', 'lists', 'funcs']
+__all__=['reset', 'fg_reset', 'bg_reset', 'lists', 'consts', 'fg', 'bg', 'funcs']
 
 
 reset="\033[0m";

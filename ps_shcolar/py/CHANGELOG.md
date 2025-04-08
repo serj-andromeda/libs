@@ -21,3 +21,20 @@ updated docs both in __init__ package descs and in child modules
 ### [__init__.py](__init__.py)
 - updated to support `lists` sub-module instead of `colors`
 - disabled importing `lists` since they aren't finished yet
+
+
+
+## 07/04/25
+### [lists.py](lists.py)
+- added logging to file json files with their paths
+- added `dbg` var for debug functionality and check for it
+### [__init__.py](__init__.py)
+- moved `lists` module above `fg` and `bg` to make'em able to use lists
+## 08/04/25
+### [fg.py](fg.py)
+- added list of fg color codes
+
+### [consts.py](consts.py)
+- added this submodule and it's stuff to `fg` module
+### [bg.py](bg.py)
+- make this module works

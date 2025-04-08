@@ -127,3 +127,15 @@ file_put_contents existing files behavior and return type changed
 
 
 
+## 06/04/25
+### [ps_structs.py](ps_structs.py)
+- added section comment
+### [ps_strings.py](ps_strings.py)
+- added this submodule and few functions there
+### [strings.py](strings.py)
+- renamed to from `ps_strings` as prefix already 
+there in main module
+- added docstring to `rmchars` function
+- fixed indebtarion errors
+### [files.py](files.py)
+- addded `start of` message
