@@ -15,7 +15,7 @@ from . import shfuncs
 from . import path
 from . import cli
 
-from . import ps_files
+from . import files
 from . import ps_csv
 from . import structs
 from . import strings
@@ -25,7 +25,7 @@ from . import strings
 
 
 __all__=[encodings, cli,
-shfuncs, path, ps_files, ps_csv
+shfuncs, path, files, ps_csv
 ]
 # [@ps_section]  OS related helpers
 

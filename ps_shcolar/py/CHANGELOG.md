@@ -38,3 +38,5 @@ updated docs both in __init__ package descs and in child modules
 - added this submodule and it's stuff to `fg` module
 ### [bg.py](bg.py)
 - make this module works
+### [styles.py](styles.py)
+- make this module works

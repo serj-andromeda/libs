@@ -1,6 +1,6 @@
 # shcolar
 
-SHCOLAR stands for **SHell COLors ARrays**
+1SHCOLAR stands for **SHell COLors ARrays**
 
 It is multilingual (Currently has Python, PHP versions) library providing strings representing ANSI escape codes for coloring output for most modern terminals.
 

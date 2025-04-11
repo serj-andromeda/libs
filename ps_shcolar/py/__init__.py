@@ -17,6 +17,7 @@ from . import consts
 
 from . import fg
 from . import bg
+from . import styles
 
 from . import funcs
 from functools import reduce
