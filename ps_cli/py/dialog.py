@@ -2,7 +2,7 @@ __doc__="""
 This module contains functions to work with `dialog` utility in *nix
 """
 import shutil
-import ps_funcs, shcolar
+import ps_funcs, ps_shcolar
 
 _DIALOG_CMD_str='dialog'
 _WHIPTAIL_CMD_str='whiptail'

@@ -2,7 +2,7 @@ __doc__="""
 This module designed to print tables in console
 """
 _PS_table_undef_data_str="@ps undefined"; _PS_table_undef_width_int=len(_PS_table_undef_data_str)
-import ps_funcs, shcolar
+import ps_funcs, ps_shcolar
 
 
 
@@ -79,7 +79,7 @@ def print_table (header_list:list, width_list: list, raw_data_list: list, *,
 	+--------+-----+-----+-----+
 	
 	"""
-	print (shcolar.fg.brightMagenta+"@ps start in_funcs_print_table, head, widths, raw_data_lst, border_chars, dialect", header_list, width_list, raw_data_list, border_char_dict, raw_data_dialect_str)
+	print (ps_shcolar.fg.colors["BrightMagenta"]+"@ps start in_funcs_print_table, head, widths, raw_data_lst, border_chars, dialect", header_list, width_list, raw_data_list, border_char_dict, raw_data_dialect_str)
 
 	if print_data_list is None:
 		print_data_list= convert_raw_data_to_print_data_list (raw_data_list, width_list, raw_data_dialect_str, border_char_dict, root_dn_str)

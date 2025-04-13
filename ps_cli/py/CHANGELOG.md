@@ -51,3 +51,23 @@
 ### [env.py](env.py)
 - finished `expand_envvars_str` function
 - finished `get_envvars_dict` function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 13/04/25
+### [table.py](table.py) [dialog.py](dialog.py) [env.py](env.py)
+- renamed `shcolar` to `ps_shcolar` as well as API calls
+

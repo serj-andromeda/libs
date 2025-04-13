@@ -152,4 +152,4 @@ there in main module
 
 ## 13/04/25
 - added `reset` SGR code to `end of...` message
-
+- changed `shcolar` lib to `ps_shcolar` as well as API calls to it

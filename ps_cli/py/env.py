@@ -2,7 +2,7 @@ __doc__="""
 This module contains functions for working with environment variables of users shell in CLI tools
 """
 import os, sys
-import ps_funcs, shcolar
+import ps_funcs, ps_shcolar
 
 def get_envvars_dict (envvars_list: list=["HOME"])->dict:
 	"""

@@ -4,7 +4,7 @@ This module provides various utility functions for [Python](https://python.org) 
 """
 print ("\033[92m@ps start of ps_funcs/init")
 
-import subprocess, os, sys, zipfile, datetime, ps_funcs, shcolar
+import subprocess, os, sys, zipfile, datetime, ps_funcs, ps_shcolar
 import xml.dom.minidom as mdom
 import ps_cli as cli
 
@@ -15,17 +15,22 @@ from . import shfuncs
 from . import path
 from . import cli
 
-from . import files
+#from . import files
 from . import ps_csv
-from . import structs
-from . import strings
+#from . import structs
+#from . import strings
 
 
 
 
 
-__all__=[encodings, cli,
-shfuncs, path, files, ps_csv
+__all__=[
+encodings,
+cli,
+#shfuncs,
+path,
+#files,
+ps_csv
 ]
 # [@ps_section]  OS related helpers
 
@@ -293,7 +298,7 @@ def get_bool_val_str (val_bool:bool, type_str:str='✅❌')->str:
 	✔️✖️ - this and following one variants look fancy but supported only on unicode-friendly terminals (most of modern ones though)
 	✅❎ - see above note
 	✅❌ - see above note
-	(shcolar.fg.brightGreen+'\u2714'+shcolar.fg.reset, shcolar.fg.brightRed+'\u2718'+shcolar.fg.reset) - you could use array-like objects as well (like lists, tuples, etc)
+	(shcolar.fg.colors['BrightGreen']+'\u2714'+ps_shcolar.fg_reset, ps_shcolar.fg["BrightRed"]+'\u2718'+shcolar.fg_reset) - you could use array-like objects as well (like lists, tuples, etc)
 	"""
 	return type_str [0 if val_bool else 1]
 	
