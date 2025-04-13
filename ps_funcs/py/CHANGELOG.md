@@ -141,5 +141,15 @@ there in main module
 - addded `start of` message
 
 
+
+
+
 ### [__init__.py](__init__.py)
 - changed `ps_files` back to `files` again
+
+## 11/04/25
+- changed color of `end of ...` message
+
+## 13/04/25
+- added `reset` SGR code to `end of...` message
+
