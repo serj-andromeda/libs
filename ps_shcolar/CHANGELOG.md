@@ -13,3 +13,6 @@
 - added readme, version and changelog from python version
 ### [golang/examples/simple.go](golang/examples/simple.go)
 - added simple example (with no separate module yet)
+
+### [README.md](README.md)
+- updated data about programming language versions
