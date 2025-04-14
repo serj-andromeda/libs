@@ -14,11 +14,34 @@ This module contains escape codes to set (reset) background colors of following 
 
 
 
-# [shcolar](#shcolar).colorslist
-
-
 # [shcolar](#shcolar).fg
 
 This module contains escape codes to set (reset) foreground colors of following text
 
 
+
+
+
+
+
+
+
+
+# Colors list
+Here is list of available colors:
+- Black
+- Red
+- Green
+- Yellow
+- Blue
+- Magenta
+- Cyan
+- White
+- BrightBlack(Gray)
+- BrightRed
+- BrightGreen
+- BrightYellow
+- BrightBlue
+- BrightMagenta
+- BrightCyan
+- BrightWhite
