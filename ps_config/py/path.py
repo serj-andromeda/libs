@@ -2,7 +2,7 @@
 This module contain functions for work with paths.
 No matter it is path to file or some folder.
 """
-import os, sys; import ps_funcs, shcolar
+import os, sys; import ps_funcs, ps_shcolar
 
 def expand_dirs_str (dn:str)->str:
 	"""

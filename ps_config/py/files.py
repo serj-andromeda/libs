@@ -2,7 +2,7 @@
 This module contains functions to work with files (dirs/symlinks also treated as files)
 """
 import os, sys, shutil
-import ps_funcs, shcolar
+import ps_funcs, ps_shcolar
 
 def get_file_type_str (fn_str: str)->str:
 	"""

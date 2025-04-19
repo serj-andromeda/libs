@@ -4,7 +4,7 @@ This module provides various functions for [Python](https://python.org) programs
 """
 
 
-import subprocess, os, sys, zipfile, datetime, ps_funcs, shcolar
+import subprocess, os, sys, zipfile, datetime, ps_funcs, ps_shcolar
 import xml.dom.minidom as mdom
 import ps_cli as cli
 
