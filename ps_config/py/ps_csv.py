@@ -4,7 +4,7 @@ Unlike native `csv` modul includes few additional dialects and functuons to make
 """
 import os, sys, re, csv
 
-import ps_funcs, shcolar
+import ps_funcs, ps_shcolar
 
 
 def dialect_print(dialect: csv.Dialect):
