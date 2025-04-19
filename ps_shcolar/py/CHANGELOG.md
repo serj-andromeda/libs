@@ -40,3 +40,14 @@ updated docs both in __init__ package descs and in child modules
 - make this module works
 ### [styles.py](styles.py)
 - make this module works
+
+
+
+
+
+
+
+## 19/04/25
+### [__init__.py](__init__.py) [funcs.py](funcs.py)
+- moved `Get...` functions from `funcs` to `__init` (main) cause in golang version snyhoe there is no eay to access `funcs`
+

@@ -47,16 +47,3 @@ def wrap (s: str, wrapper: str, resetter: str=ps_reset_all_seq_str)->str:
 	
 	
 	
-def GetFgColor_str(color: str)->str:
-    """
-    Returns FG color changing SGR string
-    Camel case used in name for uniformity with GoLang exported functions
-    """
-    return ps_shcolar.fg.colors[color]
-    
-def GetBgColor_str(color: str)->str:
-    """
-    Returns BG color changing SGR string
-    Camel case used in name for uniformity with GoLang exported functions
-    """
-    return ps_shcolar.bg.colors[color]

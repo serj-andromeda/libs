@@ -96,3 +96,19 @@ def bright (col):
 
 def setbgfg(bg=0, fg=37+30):
 	return ctrl_pfx+str(bg+40)+";"+str(fg+30)+ctrl_sfx;
+
+def GetFgColor_str(color: str)->str:
+    """
+    Returns FG color changing SGR string
+    Camel case used in name for uniformity with GoLang exported functions
+    """
+    return fg.colors[color]
+    
+def GetBgColor_str(color: str)->str:
+    """
+    Returns BG color changing SGR string
+    Camel case used in name for uniformity with GoLang exported functions
+    """
+    return bg.colors[color]
+    
+     
