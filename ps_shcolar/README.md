@@ -29,6 +29,7 @@ This module contains escape codes to set (reset) foreground colors of following 
 
 ## Screenshots
 ![Tables on Phone](images/screens/0000_tables_phone.jpg)
+Tables with volord and styles available in this librsry
 [Tables Py version](py/examples/tables.py)
 
 
