@@ -2,7 +2,7 @@
 # PS_funcs (ps_funcs)
 This module provides various utility functions for [Python](https://python.org) programs
 """
-print ("\033[92m@ps start of ps_funcs/init")
+#print ("\033[92m@ps start of ps_funcs/init")
 
 import subprocess, os, sys, zipfile, datetime, ps_funcs, ps_shcolar
 import xml.dom.minidom as mdom
@@ -540,4 +540,4 @@ def get_rel_fn_str(filename_str:str, root_dn_str:str)->str:
 #        print (shcolar.fg.brightWhite+"@ps params and types", [(k, v, type(v)) for k,v in locals().items()])
         return os.path.relpath(filename_str, start=root_dn_str)
         
-print ("\033[91m@ps end of ps_funcs/init\033[0m")
+#print ("\033[91m@ps end of ps_funcs/init\033[0m")

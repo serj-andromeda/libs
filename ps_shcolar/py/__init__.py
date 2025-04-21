@@ -110,5 +110,3 @@ def GetBgColor_str(color: str)->str:
     Camel case used in name for uniformity with GoLang exported functions
     """
     return bg.colors[color]
-    
-     
