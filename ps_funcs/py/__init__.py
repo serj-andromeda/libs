@@ -18,7 +18,7 @@ from . import cli
 #from . import files
 from . import ps_csv
 #from . import structs
-#from . import strings
+from . import strings
 
 
 
@@ -512,8 +512,8 @@ class PSException (Exception):
 
 def adjust_str (s: str, width:int=10,  pad_width_int=1, adjust_mode_str: str= "c", adjust_char_str=" ", trim_mode_str: str= "l")->str:
         res=""
-        print ("@ps funcadjin:",s)
-        print ("@ps funcadjinlocals:",locals())
+        print ("@ps funcadjustin:",s)
+        print ("@ps funcadjustinlocals:",locals())
         content_width_int=width-pad_width_int*2
         trimmed_str=s[len(s)-content_width_int:] if trim_mode_str=='l' else s[:content_width_int]
         print ("@ps afttrim_b4adjust src trimmed, trim_mode, cw:", s, trimmed_str, trim_mode_str, content_width_int)

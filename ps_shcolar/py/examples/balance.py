@@ -1,28 +1,28 @@
 #! /usr/bin/env python3
 
-expenses={
-"paper pack": (1, 20),
-"ink cartridge": (10, 70),
+expenses_list=[
+{'item': "paper pack": (1, 20),
+{'item': "ink cartridge", 'price':: (10, 70),
 
-"stapler": (5, 30),
-"paper clips": (1, 20),
-"markers": (2, 70),
-"binder": (1, 20),
-"map-case":(10,70),
-"taxes":(100, 5000, 1),
-}
-
-
+{'item': "stapler": , 'price':(5, 30),
+{'item': "paper clips", 'price': (1, 20),
+{'item': "markers", 'price': (2, 70),
+{'item': "binder", 'price': (1, 20),
+{'item': "map-case", 'price':(10,70),
+{'item': "taxes", 'price'::(100, 5000), "dingle": True),
+]
 
 
-profits={
+
+
+profits_list={
 "contract close": (100, 50000),
 "sales": (100, 100000),
 "tax returns": (1, 500, 1),
 "profit from partners": (100, 50000, 1),
 }
 
-def format_money (money_float: float, currency_symbol='$', currency_is_prefix_bool=True, add_plus_sign_bool=True)->str:
+def format_money_str (money_float: float, currency_symbol='$', currency_is_prefix_bool=True, add_plus_sign_bool=True, positive_val_sgr_str=ps_shcolar.fg.colors["Bright_Green"], negative_vals_sgr_str=ps_shcolar.fg.colors["Bright_Red"], reset_sgr_str=ps_shcolar.reset)->str:
 	res=""
 	if money_float<=0:
 		res += ps_shcolar.fg.colors["BrightRed"]
@@ -43,9 +43,11 @@ import random
 import ps_shcolar
 
 
-rows_number=10
 
-header_list=["No", ('-'*10)+"Item"+('-'*10), "Qty", "Price", "Sum"]
+rows_number=10
+item_width_int=20
+
+header_list=["#","Item".center(item_width_int), "Qty", "Price", "Sum"]
 
 chars_n_int=print_row(header_list)
 print ('-'*chars_n_int)
