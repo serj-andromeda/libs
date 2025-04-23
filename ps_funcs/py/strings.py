@@ -2,7 +2,7 @@
 Module with functions for working with strings
 """
 
-import os, sys, re
+import os, sys, re, ps_funcs
 
 def split_text_by_seplist_list (text: str, sep_list=[' ', '\n'])->list:
 	"""
@@ -24,7 +24,7 @@ def split_text_by_seplist_list (text: str, sep_list=[' ', '\n'])->list:
 
 
 
-def wrap (text:str, width_int:int=20, *, sep_list=[' ', '\n'], newsep_str=' ', newlinesep_str='\n')->str:
+def wrap (text:str, width_int:int=20, *, sep_list=[' ', '\n'], newsep_str=' ', newlinesep_str='\n', do_strip_before_process=True)->str:
 	"""
 	Function that breaks trxt into
 	srparate words and try to fit'em
@@ -60,10 +60,25 @@ def gen_nums_str (start_int:int|None=None, stop_int:int|None=None, step_int:int|
 	
 	Trying the best to simulate `range` arguments behavior). Should worksvforvall cases sincevargs actually passing to `range` function but in the case please let me know.
 	"""
-	rng_args_lst=args_to_list_lst (start_int,  stop_int, step_int)
+	rng_args_lst=ps_funcs.args_to_list_lst (start_int,  stop_int, step_int)
 	if len(rng_args_lst)==0:
 		raise PSException("Cannot call func gen_nums_str without arguments", fatal=True)
 	res=""
 	for n in range(*rng_args_lst):
 		res +=str(n%10)
 	return res
+
+
+
+
+
+
+
+
+
+
+def add_word (text: str, word: str, *, sep: str=' ')->str:
+	if text=="":
+		return word
+	else:
+		return text+sep+word

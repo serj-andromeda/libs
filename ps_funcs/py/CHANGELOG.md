@@ -178,3 +178,6 @@ there in main module
 ### [strings.py](strings.py) [__init__.py](__init__.py)
 - separate list from text functionality from inline in `wrap` function to distinct function `split_text_by_seplist_list`
 - moved `gen_nums_str` function to `strings` from main mofule
+
+### [strings.py](strings.py)
+- added `add_word` function
