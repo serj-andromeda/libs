@@ -366,20 +366,6 @@ def args_to_list_lst (*args, include_nones_bool:bool=False)->list:
 		return list(args)
 	else:
 		return [a for a in args if a is not None]
-
-def gen_nums_str (start_int:int|None=None, stop_int:int|None=None, step_int:int|None=None):
-	"""
-	Generate string with digits ending numbers from start_int to stop_int (exclusive)
-	
-	Trying the best to simulate `range` arguments behavior). Should worksvforvall cases sincevargs actually passing to `range` function but in the case please let me know.
-	"""
-	rng_args_lst=args_to_list_lst (start_int,  stop_int, step_int)
-	if len(rng_args_lst)==0:
-		raise PSException("Cannot call func gen_nums_str without arguments", fatal=True)
-	res=""
-	for n in range(*rng_args_lst):
-		res +=str(n%10)
-	return res
 	
 	
 

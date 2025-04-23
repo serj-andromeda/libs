@@ -175,6 +175,6 @@ there in main module
 
 
 ## 23/04/25
-### [strings.py](strings.py)
+### [strings.py](strings.py) [__init__.py](__init__.py)
 - separate list from text functionality from inline in `wrap` function to distinct function `split_text_by_seplist_list`
-
+- moved `gen_nums_str` function to `strings` from main mofule
