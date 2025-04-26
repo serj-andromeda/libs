@@ -181,3 +181,13 @@ there in main module
 
 ### [strings.py](strings.py)
 - added `add_word` function
+
+
+
+
+
+
+## 26/04/25
+### [structs.py](structs.py)
+- added this module and `list_get` function
+

@@ -17,7 +17,7 @@ from . import cli
 
 #from . import files
 from . import ps_csv
-#from . import structs
+from . import structs
 from . import strings
 
 
