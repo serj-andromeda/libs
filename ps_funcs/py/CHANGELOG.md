@@ -202,4 +202,4 @@ there in main module
 - moved `file_get_contents` and `file_put_contents` functions to `files` submodule
 ### [strings.py](strings.py)
 - changed `wrap` function name to `wrap_str`
-
+- start refactoring `wrap_str` function

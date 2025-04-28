@@ -23,20 +23,22 @@ def split_text_by_seplist_list (text: str, sep_list=[' ', '\n'])->list:
 
 
 
-def wrap (text:str, width_int:int=20, *, sep_list=[' ', '\n'], newsep_str=' ', newlinesep_str='\n', do_strip_before_process=True)->str:
+def wrap (text_str:str, width_int:int=20, *, txtsep_list=[' ', '\n'], wordsep_str=' ', linesep_str='\n', do_strip_before_process=True)->str:
 	"""
 	Function that breaks trxt into
 	srparate words and try to fit'em
 	in desired width
 	"""
-	text_list=split_text_by_seplist_list(text, sep_list)
+	if do_strip_before_process:
+		text_str=text_str.strip()
+	text_list=split_text_by_seplist_list(text_str, txtsep_list)
 	
 #	print ("@ps text_list:", text_list); exit;
 	
 	res_list=[]
 	row_list=[]
 	for w in text_list:
-		row_str=newsep_str.join(row_list)
+		row_str=wordsep_str.join(row_list)
 		new_len_int = len (row_str)+len(newsep_str)+len(w)
 		if new_len_int>width_int:
 			continue
