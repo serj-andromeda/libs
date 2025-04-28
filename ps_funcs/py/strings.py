@@ -11,7 +11,6 @@ def split_text_by_seplist_list (text: str, sep_list=[' ', '\n'])->list:
 	text=text.strip()
 	rx_seps_rxstr='|'.join(map(re.escape, sep_list))
 
-	print ("@ps repr of rxseps", repr(rx_seps_rxstr))
 	text_list=re.split(rx_seps_rxstr, text)
 	return text_list
 
