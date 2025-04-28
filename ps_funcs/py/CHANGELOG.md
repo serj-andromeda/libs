@@ -191,3 +191,13 @@ there in main module
 ### [structs.py](structs.py)
 - added this module and `list_get` function
 
+
+
+
+
+
+
+## 28/04/25
+### [files.py](files.py)
+- moved `file_get_contents` and `file_put_contents` functions to `files` submodule
+
