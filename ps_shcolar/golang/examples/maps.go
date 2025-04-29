@@ -5,9 +5,11 @@ import "fmt"
 
 
 
-func main() {
+
 	fg := make (map[string]string)
 	bg := make (map[string]string)
+
+func main() {
 	fg["BrightGreen"] = "\033[92m"
 	bg["BrightWhite"] = "\033[107m"
 	fmt.Println(

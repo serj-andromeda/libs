@@ -203,3 +203,10 @@ there in main module
 ### [strings.py](strings.py)
 - changed `wrap` function name to `wrap_str`
 - start refactoring `wrap_str` function
+
+
+
+
+## 29/04/25
+### [structs.py](structs.py)
+- add closing comment for `list section`
