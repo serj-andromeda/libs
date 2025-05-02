@@ -95,7 +95,7 @@ def add_word (text: str, word: str, *, sep: str=' ')->str:
 		
 		
 		
-_unicode2ascii_dict={
+unicode2ascii_dict={
 ord("\u302f") : ord(" ")
 }
 
