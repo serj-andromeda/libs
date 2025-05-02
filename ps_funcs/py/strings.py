@@ -114,9 +114,9 @@ def func_strip_str (txt_str: str)->str:
 
 
 
-def func_split_list (txt_str: str, separator_str: str=',', maxsplit_int=-1)->list:
+def func_join_str (iterable: list|tuple, separator_str: str=',')->str:
 	"""
-	Converts string to list. Especially useful for values like RGB e.g. 0,128,0
-	Note that any non-relevant symbols like whitespaces should be cleared first. E. g. 0,128,0 - ok, but 0, 128, 0 -bad
+	Converts list or tuple to string to list. Especially useful for values like RGB e.g. 0,128,0
+	Note that any non-relevant symbols like whitespaces should be cleared before call. E. g. [0,128,0] - ok, but ['0 ', '128 ', '0 '] -bad
 	"""
-	return txt_str.split(separator_str, maxsplit_int)
+	return separator_str.join (iterable)
