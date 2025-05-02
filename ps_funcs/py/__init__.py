@@ -120,7 +120,7 @@ def file_get_contents (filename, binary=False, forceZip=False, return_lst_bool:b
 	Function mimics PHP file_get_contents minimal behavior - reads file specified by *filename* arg and return its content.
 	However it is not fully compatible substitution cause it doesn't supports any psrameters beside *filename*
 	"""
-	return files.file_get_contents (filename, binary, forceZip, return_lst_bool)
+	return files.file_get_contents (filename, binary=binary, forceZip=forceZip, return_lst_bool=return_lst_bool)
 	
 def file_put_contents (filename_fnstr, data, overwrite=False, return_none_on_exists=False)->int|None:
 	"""

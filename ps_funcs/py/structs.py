@@ -2,7 +2,7 @@
 Module with functions for working with
 various structurrs like dicts, lists, tuples etc.
 """
-
+from encodings import *
 
 #@ps section list functions
 def list_get (lst_list, index_int: int, default=None):

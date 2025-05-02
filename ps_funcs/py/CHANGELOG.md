@@ -210,3 +210,16 @@ there in main module
 ## 29/04/25
 ### [structs.py](structs.py)
 - add closing comment for `list section`
+
+
+
+
+## 01/05/25
+### [files.py](files.py)
+- made optional args in `file_get_contents` func keyword only
+- changed call in `__init__` to reflect change mentioned above
+
+## 03/05/25
+### [strings.py](strings.py)
+- added a number of functional replacements for string methods
+

@@ -1,4 +1,6 @@
-def file_get_contents (filename, binary=False, forceZip=False, return_lst_bool:bool=False)->str|list|None:
+from . import structs
+
+def file_get_contents (filename, *, binary=False, forceZip=False, return_lst_bool:bool=False)->str|list|None:
 	"""
 	Function mimics PHP file_get_contents minimal behavior - reads file specified by *filename* arg and return its content.
 	However it is not fully compatible substitution cause it doesn't supports any psrameters beside *filename*
@@ -7,7 +9,7 @@ def file_get_contents (filename, binary=False, forceZip=False, return_lst_bool:b
 		res=None
 		with open (filename, "rb" if binary else "rt") as inf:
 			if return_lst_bool:
-				res=strip_list_items(inf.readlines())
+				res=structs.strip_list_items(inf.readlines())
 			else:
 				res=inf.read()
 		return res

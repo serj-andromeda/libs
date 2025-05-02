@@ -34,3 +34,23 @@ def get_char_from_hexcode (code_str)->str:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+unicode2ascii_default_translate_dict={
+}
+def unicode2ascii (s: str, *, translate_dict: dict=unicode2ascii_default_translate_dict)->str:
+	"""
+	Convrrts all known unicode characters (default dict see above) to their ASCII counterpsrts
+	"""
+	return s.translate (translate_dict)
