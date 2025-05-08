@@ -1,4 +1,4 @@
-import shcolar
+import ps_shcolar
 
 def test_green_fg():
 	assert shcolar.fg.green=="\033[32m";

@@ -61,5 +61,5 @@ for row_i in range(1, rows_number+1):
 
 	record_type=random.randint(0,1) # 0 for expenses, 1 for profits
 	data_source_list=expenses_list if record_type==0 else profits_list
-	key_str=random.choice(list(data_source_list))
+	key_int=random.randint(0, len(data_source_list))
 	print (key_str, data_source_list[key_str])
