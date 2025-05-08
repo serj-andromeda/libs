@@ -34,7 +34,7 @@ def wrap_str (text_str:str, width_int:int=20, *, txtsep_list=[' ', '\n'], wordse
 		text_str=text_str.strip()
 	text_list=split_text_by_seplist_list(text_str, txtsep_list)
 
-#	print ("@ps text_list:", text_list); exit;
+	print ("@ps enum text_list:", enumerate(text_list));
 	
 	res_list=[]
 	row_list=[]
@@ -47,6 +47,8 @@ def wrap_str (text_str:str, width_int:int=20, *, txtsep_list=[' ', '\n'], wordse
 		else:
 			row_list.append(word_str)
 			row_str=wordsep_str.join(row_list)
+			if row_str=="Lorem ipsum dolor at":
+				print (f"@ps catch bad string with index {i} and word {word_str}")
 			res_list.append(row_str)
 	res_str=linesep_str.join(res_list)
 	print (f"@ps finished at index {i}. Returning from wrap_str")

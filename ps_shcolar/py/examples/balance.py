@@ -1,28 +1,32 @@
 #! /usr/bin/env python3
+import ps_shcolar
+
+
+
 
 expenses_list=[
-{'item': "paper pack": (1, 20),
-{'item': "ink cartridge", 'price':: (10, 70),
+{'item': "paper pack", "price": (1, 20),},
+{'item': "ink cartridge", 'price': (10, 70),},
+{'item': "stapler", 'price':(5, 30),},
+{'item': "paper clips", 'price': (1, 20),},
+{'item': "markers", 'price': (2, 70),},
 
-{'item': "stapler": , 'price':(5, 30),
-{'item': "paper clips", 'price': (1, 20),
-{'item': "markers", 'price': (2, 70),
-{'item': "binder", 'price': (1, 20),
-{'item': "map-case", 'price':(10,70),
-{'item': "taxes", 'price'::(100, 5000), "dingle": True),
+{'item': "binder", 'price': (1, 20),},
+{'item': "map-case", 'price':(10,70),},
+{'item': "taxes", 'price':(100, 5000), "single": True},
 ]
 
 
 
 
-profits_list={
-"contract close": (100, 50000),
-"sales": (100, 100000),
-"tax returns": (1, 500, 1),
-"profit from partners": (100, 50000, 1),
-}
+profits_list=[
+{"item": "contract close", 'price':(100, 50000)},
+{"item":"sales", "price": (100, 100000), "single": True},
+{"item":"tax returns", "price": (1, 500), "single": True},
+{"item": "profit from partners", "price": (100, 50000), "single": True},
+]
 
-def format_money_str (money_float: float, currency_symbol='$', currency_is_prefix_bool=True, add_plus_sign_bool=True, positive_val_sgr_str=ps_shcolar.fg.colors["Bright_Green"], negative_vals_sgr_str=ps_shcolar.fg.colors["Bright_Red"], reset_sgr_str=ps_shcolar.reset)->str:
+def format_money_str (money_float: float, currency_symbol='$', currency_is_prefix_bool=True, add_plus_sign_bool=True, positive_val_sgr_str=ps_shcolar.fg.colors["BrightGreen"], negative_vals_sgr_str=ps_shcolar.fg.colors["BrightRed"], reset_sgr_str=ps_shcolar.reset)->str:
 	res=""
 	if money_float<=0:
 		res += ps_shcolar.fg.colors["BrightRed"]
@@ -56,6 +60,6 @@ print ('-'*chars_n_int)
 for row_i in range(1, rows_number+1):
 
 	record_type=random.randint(0,1) # 0 for expenses, 1 for profits
-	data_source_dict=expenses if record_type==0 else profits
-	key_str=random.choice(list(data_source_dict.keys()))
-	print (key_str, data_source_dict[key_str])
+	data_source_list=expenses_list if record_type==0 else profits_list
+	key_str=random.choice(list(data_source_list))
+	print (key_str, data_source_list[key_str])
