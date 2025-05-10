@@ -45,9 +45,11 @@ def add_item_to_list (lst: list, item: dict)->bool:
 	
 	
 	indices_list=["nmb_idx", "name_idx", "price_idx"]
-	qty_idx=
 	if item [single_key]:
 		for itm2chck in list:
+			if itm2chk[name_key]==item[name_key]:
+				add_item_bool=False
+	
 
 
 def print_row (row_list: list)->int:
