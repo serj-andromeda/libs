@@ -24,7 +24,7 @@ class WrapMode_enum (enum.Enum):
 
 
 
-def wrap_str (text_str:str, width_int:int=20, *, txtsep_list=[' ', '\n'], wordsep_str=' ', linesep_str='\n', do_strip_before_process_bool=True)->str:
+def wrap_str (text_str:str, width_int:int=20, *, txtsep_list=[' ', '\n'], wordsep_str=' ', linesep_str='\n', do_strip_before_process_bool=True, linecont_str='…')->str:
 	"""
 	Function that breaks trxt into
 	srparate words and try to fit'em

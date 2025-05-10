@@ -34,7 +34,20 @@ def format_money_str (money_float: float, currency_symbol='$', currency_is_prefi
 		res +=  ps_shcolar.fg.colors["BrightGreen"]+'+'
 	res += "{:.2}".format(money_float)
 
-
+def add_item_to_list (lst: list, item: dict)->bool:
+	"""
+	Adds item to given list with checks and calculations
+	"""
+	name_key="item"
+	single_key="single"
+	name_str=item[name_key]
+	add_item_bool = True
+	
+	
+	indices_list=["nmb_idx", "name_idx", "price_idx"]
+	qty_idx=
+	if item [single_key]:
+		for itm2chck in list:
 
 
 def print_row (row_list: list)->int:
@@ -57,9 +70,10 @@ chars_n_int=print_row(header_list)
 print ('-'*chars_n_int)
 
 
-for row_i in range(1, rows_number+1):
+for row_idx_int in range(1, rows_number+1):
 
 	record_type=random.randint(0,1) # 0 for expenses, 1 for profits
 	data_source_list=expenses_list if record_type==0 else profits_list
 	key_int=random.randint(0, len(data_source_list))
-	print (key_str, data_source_list[key_str])
+	print (key_int)
+	print (data_source_list[key_int])

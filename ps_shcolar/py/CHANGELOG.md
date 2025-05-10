@@ -51,3 +51,8 @@ updated docs both in __init__ package descs and in child modules
 ### [__init__.py](__init__.py) [funcs.py](funcs.py)
 - moved `Get...` functions from `funcs` to `__init` (main) cause in golang version snyhoe there is no eay to access `funcs`
 
+## 10/05/25
+### [examples/balance.py](examples/balance.py)
+- changed source structs
+
+
