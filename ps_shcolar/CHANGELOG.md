@@ -16,3 +16,8 @@
 
 ### [README.md](README.md)
 - updated data about programming language versions
+
+## 26/05/25
+### [rust](rust)
+- added dir for `rust` version
+
