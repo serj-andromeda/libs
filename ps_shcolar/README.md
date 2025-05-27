@@ -1,8 +1,8 @@
 # shcolar
 
-1SHCOLAR stands for **SHell COLors ARrays**
+SHCOLAR stands for **SHell COLors ARrays**
 
-It is multilingual (Currently has Python, PHP, GoLang versions) library providing strings representing ANSI escape codes for coloring output for most modern terminals.
+It is multilingual (Currently has Python, PHP, GoLang versions) library providing strings representing ANSI escape codes for coloring output for most modern terminals. Also it has engine for building tables on terminals and other CLI-related things
 
 Color escape codes are from [Wikipedia](https://en.m.wikipedia.org/wiki/ANSI_escape_code#colors) (Description>Colors>3-bit and 4-bit
 
