@@ -5,4 +5,4 @@ Here you could find only brief description of each (sometimes with URLs leading 
 # `ps_shcolar`
 - *SHell COLor arrays*
 - lib with escape codes (SGRs) for colorizing/styling console output
-- (README)[ps_shcolar/README.md]
+- [README](ps_shcolar/README.md)
