@@ -4,7 +4,7 @@
 
 It is multilingual (Currently has Python, PHP, GoLang versions) library providing strings representing ANSI escape codes for coloring output for most modern terminals.
 
-Color escape codes are from [Wikipedia](https://en.m.wikipedia.org/wiki/ANSI_escape_code) (Description>Colors>3-bit and 4-bit
+Color escape codes are from [Wikipedia](https://en.m.wikipedia.org/wiki/ANSI_escape_code#colors) (Description>Colors>3-bit and 4-bit
 
 Mainly following links lead to PYthon version of lib. However, almost all language versions have same structure so you could lead to the same in other language just replacing `py` with correspondent one:
 - py - python

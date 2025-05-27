@@ -44,6 +44,9 @@ file_put_contents existing files behavior and return type changed
 
 
 
+## 27/05/25
+### [README.md](README.md)
+- changed wording and added link to `ps_shcolar` README
 
 
 
