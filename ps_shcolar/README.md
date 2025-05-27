@@ -10,6 +10,7 @@ Mainly following links lead to PYthon version of lib. However, almost all langua
 - py - python
 - golang - GoLang
 - php - PHP
+- rust - Rust
 - sh - Shell (mainly Bash)
 
 # [shcolar](#shcolar).bg
@@ -29,8 +30,8 @@ This module contains escape codes to set (reset) foreground colors of following 
 
 ## Screenshots
 ![Tables on Phone](images/screens/0000_tables_phone.jpg)
-Tables with volord and styles available in this librsry
-[Tables Py version](py/examples/tables.py)
+Tables with colors and styles available in this library
+[Tables Example Py version](py/examples/tables.py)
 
 
 
