@@ -10,3 +10,11 @@ def expand_dirs_str (dn:str)->str:
 	"""
 	return os.path.expanduser(dn)
 
+
+def is_fn_absolute (fn: str)->bool:
+	"""
+	Simple check if given filename is absolute
+	Checks if first symbol is slash
+	NOTE: this function most likely won't work on Windows machines cause there absolute paths started with drive letter
+	"""
+	return fn[0]=="/";

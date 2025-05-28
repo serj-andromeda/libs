@@ -48,7 +48,7 @@ def wrap_str (text_str:str, width_int:int=20, *, txtsep_list=[' ', '\n'], wordse
 			row_list.append(word_str)
 			row_str=wordsep_str.join(row_list)
 			if row_str=="Lorem ipsum dolor at":
-				print (f"@ps catch bad string with index {i} and word {word_str}")
+				print (f"@ps catch bad string with index {i} and word '{word_str}'")
 			res_list.append(row_str)
 	res_str=linesep_str.join(res_list)
 	print (f"@ps finished at index {i}. Returning from wrap_str")
