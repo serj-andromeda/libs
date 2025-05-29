@@ -27,7 +27,7 @@ def is_fn_absolute (fn: str)->bool:
 	
 	
 	
-def get_homedn_str()->str:
+def get_homedir_str()->str:
 	"""
 	Just return home dir of user from hosts OS
 	"""
