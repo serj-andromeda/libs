@@ -118,7 +118,7 @@ file_put_contents existing files behavior and return type changed
 ### [files.py](files.py)
 - renamed `binary` param to `binary_mode_bool` for uniformity
 - replaced `None` in encoding_str param with `utf-8`
-- moved default encoding to separate 'hidden' `_default_encoding' variable
+- moved default encoding to separate 'hidden' `_default_encoding` variable
 - added return type-hint to `file_get_contents` func
 - added check for binary mode to `file_get_contents` func for list mode (it's impossible set of params)
 
@@ -223,3 +223,7 @@ there in main module
 ### [strings.py](strings.py)
 - added a number of functional replacements for string methods
 
+
+## 29/05/25
+### [strings.py](strings.py)
+- added `str2row` function

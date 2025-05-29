@@ -24,9 +24,25 @@ class WrapMode_enum (enum.Enum):
 
 
 
-def wrap_str (text_str:str, width_int:int=20, *, txtsep_list=[' ', '\n'], wordsep_str=' ', linesep_str='\n', do_strip_before_process_bool=True, linecont_str='…')->str:
+
+
+
+def str2row (text_str:str, width_int:int=20, *, txtsep_list=[' ', '\n'], wordsep_str=' ', linesep_str='\n', do_strip_before_process_bool=True, linecont_str='…')->tuple:
 	"""
 	Function that breaks trxt into
+	srparate words and try to fit'em
+	in desired width.
+	It returns tuple of two strings: first is portion of text that should be printed on current row and second is thevrest of string
+	"""
+	
+
+
+
+
+
+def wrap_str (text_str:str, width_int:int=20, *, txtsep_list=[' ', '\n'], wordsep_str=' ', linesep_str='\n', do_strip_before_process_bool=True, linecont_str='…')->str:
+	"""
+	Function that breaks text into
 	srparate words and try to fit'em
 	in desired width
 	"""
@@ -39,12 +55,14 @@ def wrap_str (text_str:str, width_int:int=20, *, txtsep_list=[' ', '\n'], wordse
 	res_list=[]
 	row_list=[]
 	for i, word_str in enumerate(text_list):
-		print (f"@ps word #{i}: {word_str}")
+		print (f"@ps word #{i}: {word_str}", end=" ")
 		row_str=wordsep_str.join(row_list)
 		new_len_int = len (row_str)+len(wordsep_str)+len(word_str)
 		if new_len_int>width_int:
+			print ("@continue");
 			continue
 		else:
+			print ("@add");
 			row_list.append(word_str)
 			row_str=wordsep_str.join(row_list)
 			if row_str=="Lorem ipsum dolor at":
