@@ -229,3 +229,4 @@ there in main module
 - added `str2row` function
 ### [path.py](path.py)
 - added `get_homedn_str` function
+- renamed `get_homedn_str` to `get_homedir_str`
