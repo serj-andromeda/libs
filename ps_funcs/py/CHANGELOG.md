@@ -227,3 +227,5 @@ there in main module
 ## 29/05/25
 ### [strings.py](strings.py)
 - added `str2row` function
+### [path.py](path.py)
+- added `get_homedn_str` function

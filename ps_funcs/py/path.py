@@ -18,3 +18,17 @@ def is_fn_absolute (fn: str)->bool:
 	NOTE: this function most likely won't work on Windows machines cause there absolute paths started with drive letter
 	"""
 	return fn[0]=="/";
+	
+	
+	
+	
+	
+	
+	
+	
+	
+def get_homedn_str()->str:
+	"""
+	Just return home dir of user from hosts OS
+	"""
+	return os.getenv ("HOME");
