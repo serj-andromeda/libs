@@ -19,6 +19,7 @@ from . import files
 from . import ps_csv
 from . import structs
 from . import strings
+from . import config
 
 
 
@@ -30,7 +31,8 @@ cli,
 #shfuncs,
 path,
 #files,
-ps_csv
+ps_csv,
+config
 ]
 # [@ps_section]  OS related helpers
 

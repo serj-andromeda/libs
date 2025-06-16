@@ -230,3 +230,13 @@ there in main module
 ### [path.py](path.py)
 - added `get_homedn_str` function
 - renamed `get_homedn_str` to `get_homedir_str`
+
+
+
+
+## 16/06/25
+### [config.py](config.py)
+- added this module here
+### [__init__.py](__init__.py)
+- added import of config module
+
