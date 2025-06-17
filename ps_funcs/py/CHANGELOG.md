@@ -239,4 +239,14 @@ there in main module
 - added this module here
 ### [__init__.py](__init__.py)
 - added import of config module
+### [config.py](config.py)
+- added class `PSConfig` and first method `get` there
+
+
+
+## 17/06/25
+### [config.py](config.py)
+- added constructor for `PSConfig` class and `parse` method
+
+
 
