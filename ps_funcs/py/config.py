@@ -18,7 +18,7 @@ class PSConfig (configparser.ConfigParser):
 		self.filename=filename
 		self.parse()
 		
-	def parse (self, filename: str|None)->bool:
+	def parse (self, filename: str|None=None)->bool:
 		if filename is None:
 			if self.filename is None:
 				raise PSException ("Filename should be passed to PSConfig either by constructor or to parse function", colorize=True, fatal=True)

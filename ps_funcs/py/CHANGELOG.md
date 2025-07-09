@@ -248,5 +248,9 @@ there in main module
 ### [config.py](config.py)
 - added constructor for `PSConfig` class and `parse` method
 
+## 09/07/25
+### [config.py](config.py)
+- fixed invalid `parse` function call in constructor
+
 
 
