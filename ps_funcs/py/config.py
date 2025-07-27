@@ -20,7 +20,23 @@ class PSConfig (configparser.ConfigParser):
 	def get_filename (self)->str:
 		return self.filename
 
-	def __init__ (self, filename_str: str):
+	@classmethod
+	def default_config_dn (cls)->str:
+		from . import path
+		return path.get_homedir_str()
+
+	@classmethod
+	def default_config_fn (cls)->str:
+		return '.ps_config.ini'
+
+
+	@classmethod
+	def default_config_absfn (cls)->str:
+		return os.path.join (cls.default_config_dn(), cls.default_config_fn())
+
+
+	def __init__ (self, filename_str: str|None):
+		super().__init__()
 		self.set_filename (filename_str)
 		self.parse()
 		
