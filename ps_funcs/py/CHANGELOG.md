@@ -254,3 +254,6 @@ there in main module
 
 
 
+## 27/07/25
+### [config.py](config.py)
+- added `get_filename` function to class and changed `__init__` logic slightly

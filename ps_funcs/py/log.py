@@ -5,6 +5,8 @@ Most of logging parameters configurable through function arguments.
 import os, sys; import ps_funcs, ps_shcolar
 
 class PSLog:
+	def process_tpl(self, tpl:str)->str:
+		pass
 	def set_fn_tpl (self, fn_tpl:str):
 		self._fn_tpl=fn_tpl
 	def set_dn_tpl (self, dn_tpl:str):
@@ -17,4 +19,5 @@ class PSLog:
 		self.set_dn_tpl (log_dn_tpl)
 		self.set_fn_tpl (log_fn_tpl)
 		self.set_line_tpl (line_tpl)
-	def log (self, msg)
+	def log (self, msg):
+		pass

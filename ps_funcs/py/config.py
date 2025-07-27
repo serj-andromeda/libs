@@ -14,13 +14,20 @@ class PSConfig (configparser.ConfigParser):
 
 
 
-	def __init__ (self, filename: str):
-		self.filename=filename
+	def set_filename (self, filename_str: str):
+		self.filename=filename_str
+
+	def get_filename (self)->str:
+		return self.filename
+
+	def __init__ (self, filename_str: str):
+		self.set_filename (filename_str)
 		self.parse()
 		
-	def parse (self, filename: str|None=None)->bool:
-		if filename is None:
-			if self.filename is None:
+	def parse (self, filename_str: str|None=None)->bool:
+		if filename_str is not None:
+			self.set_filename (filename_str)
+			if self.get_filename_str() is None:
 				raise PSException ("Filename should be passed to PSConfig either by constructor or to parse function", colorize=True, fatal=True)
 
 
