@@ -257,3 +257,17 @@ there in main module
 ## 27/07/25
 ### [config.py](config.py)
 - added `get_filename` function to class and changed `__init__` logic slightly
+
+## 31/07/25
+### [log.py](log.py)
+- added `get_fn_tpl` and `get_fn_tpl` functions
+
+
+
+
+
+
+## 03/08/25
+### [config.py](config.py)
+- made `filename` parameter in `__init__` optional
+

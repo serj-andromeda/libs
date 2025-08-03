@@ -35,8 +35,10 @@ class PSConfig (configparser.ConfigParser):
 		return os.path.join (cls.default_config_dn(), cls.default_config_fn())
 
 
-	def __init__ (self, filename_str: str|None):
+	def __init__ (self, filename_str: str|None=None):
 		super().__init__()
+		if filename_str is None:
+			filename_str=self.default_config_absfn()
 		self.set_filename (filename_str)
 		self.parse()
 		

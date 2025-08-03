@@ -11,6 +11,10 @@ class PSLog:
 		self._fn_tpl=fn_tpl
 	def set_dn_tpl (self, dn_tpl:str):
 		self._dn_tpl=dn_tpl
+	def get_fn_tpl (self)->str:
+		return self._fn_tpl
+	def get_dn_tpl (self)->str:
+		return self._dn_tpl
 	def set_line_tpl (self, line_tpl:str):
 		self._line_tpl=line_tpl
 	def set_tag (self, tag_str:str):

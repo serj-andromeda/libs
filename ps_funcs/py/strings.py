@@ -140,3 +140,20 @@ def func_join_str (iterable: list|tuple, separator_str: str=',')->str:
 	Note that any non-relevant symbols like whitespaces should be cleared before call. E. g. [0,128,0] - ok, but ['0 ', '128 ', '0 '] -bad
 	"""
 	return separator_str.join (iterable)
+	
+	
+	
+	
+	
+def correctForm_str (term:str, nmb:int, lang:str="en", includeNmb=True, case:str="и")->str:
+	res="unknown language or params in correctForm function"
+	match lang:
+		case "en":
+			sfx=""
+			if nmb!=1:
+				sfx="s"
+			res=(str(nmb)+ " " if includeNmb else "")+term+sfx
+		case _:
+			res="unknown language "+lang+" in correctForm function"
+	return res
+	

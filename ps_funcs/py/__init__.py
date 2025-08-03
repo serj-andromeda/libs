@@ -256,19 +256,7 @@ def pstime_str(longFmt:bool=False)->str:
 	fmt="%H:%M" if longFmt else "%H%M"
 	return nowdt.strftime(fmt)
 	
-def correctForm_str (term:str, nmb:int, lang:str="en", includeNmb=True, case:str="и")->str:
-	res="unknown language or params in correctForm function"
-	match lang:
-		case "en":
-			sfx=""
-			if nmb!=1:
-				sfx="s"
-			res=(str(nmb)+ " " if includeNmb else "")+term+sfx
-		case _:
-			res="unknown language "+lang+" in correctForm function"
-	return res
-	
-	
+
 def get_bool_val_str (val_bool:bool, type_str:str='✅❌')->str:
 	"""
 	Return 1st symbol in type_str if val is True, second otherwise.
