@@ -4,7 +4,7 @@ import ps_funcs, ps_shcolar
 
 
 
-
+ps_funcs_config_verbose_level_str='dbg'
 
 
 
@@ -29,6 +29,10 @@ class PSConfig (configparser.ConfigParser):
 	def default_config_fn (cls)->str:
 		return '.ps_config.ini'
 
+	@classmethod
+	def get_default_separator_str (cls)->str:
+		return '/'
+
 
 	@classmethod
 	def default_config_absfn (cls)->str:
@@ -52,10 +56,15 @@ class PSConfig (configparser.ConfigParser):
 	def get (self, path: str|tuple)->str:
 	
 		res = ""
-		if isinstance(path, tuple):
-			res+="tuple got: "+str(path)
+		sep=self.get_default_separator_str()
 		elif isinstance (path, str):
-			res+="str got: "+str(path)
+			if sep in path:
+				path=tuple(path.split(sep))
+			else:
+				raise PSException ("No separator '{sep}' found in string '{path}' passed to PSConfig.get", colorize=True, fatal=True)
+			
+		if isinstance(path, tuple):
+			res+=f"tuple got in {__class__}: "+str(path)
 		else:
 			res +="wrong type got: "+str(type(path))
 		return "just test as for "+res
