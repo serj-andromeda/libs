@@ -57,12 +57,13 @@ class PSConfig (configparser.ConfigParser):
 	
 		res = ""
 		sep=self.get_default_separator_str()
-		elif isinstance (path, str):
+		if isinstance (path, str):
 			if sep in path:
 				path=tuple(path.split(sep))
 			else:
 				raise PSException ("No separator '{sep}' found in string '{path}' passed to PSConfig.get", colorize=True, fatal=True)
 			
+		
 		if isinstance(path, tuple):
 			res+=f"tuple got in {__class__}: "+str(path)
 		else:
